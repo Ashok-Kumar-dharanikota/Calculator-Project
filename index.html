@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <legend></legend>
+    <div class="container">
+        <div class="calculator">
+            <form >
+                <div class="display">
+                    <input type="text" name="display" class="field">
+                </div>
+                <div>
+                        <input type="button" value="AC" name="all clear" onclick="display.value= '' " class="operator hover">
+                        <input type="button" value="DEL" name="delete" onclick="display.value= display.value.toString().slice(0,-1) " class="operator hover">
+                        <input type="button" value="." name="point" onclick="display.value+= '.' " class="operator hover">
+                        <input type="button" value="/" name="division" onclick="display.value+= '/' " class="operator hover">
+                </div>    
+                <div>
+                        <input type="button" value="7" name="7" onclick="display.value+= '7' " class="hover">
+                        <input type="button" value="8" name="8" onclick="display.value+= '8' " class="hover">
+                        <input type="button" value="9" name="9" onclick="display.value+= '9' " class="hover">
+                        <input type="button" value="*" name="mul" onclick="display.value+= '*' " class="operator hover">
+                </div>    
+                <div>
+                        <input type="button" value="6" name="6" onclick="display.value+= '6' " class="hover">
+                        <input type="button" value="5" name="5" onclick="display.value+= '5' " class="hover">
+                        <input type="button" value="4" name="4" onclick="display.value+= '4' " class="hover">
+                        <input type="button" value="-" name="sub" onclick="display.value+= '-' " class="operator hover">
+                </div>    
+                <div>
+                        <input type="button" value="3" name="3" onclick="display.value+= '3' " class="hover">
+                        <input type="button" value="2" name="2" onclick="display.value+= '2' " class="hover">
+                        <input type="button" value="1" name="1" onclick="display.value+= '1' " class="hover">
+                        <input type="button" value="+" name="add" onclick="display.value+= '+' " class="operator hover">
+                </div>    
+                <div>
+                        <input type="button" value="00" name="00" onclick="display.value+= '00' " class="hover">
+                        <input type="button" value="0" name="0" onclick="display.value+= '0' " class="hover">
+                        <input type="button" value="=" name="equals" class="equal operator" onclick="display.value= eval(display.value)">
+                </div>    
+
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
